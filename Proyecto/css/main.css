@@ -1,0 +1,105 @@
+*{
+  font-family: Roboto Slab, serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+}
+
+body{
+  background-color: rgb(15, 13, 13);
+  margin: 0;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+label{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+input{
+  border-radius: 5px;
+  border-color: blue;
+  width: 200px; 
+  height: 20px; 
+  font-size: 16px; 
+  padding: 3px;
+}
+
+form{
+  border: 2px solid;
+  border-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+}
+
+.div-formulario{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+  margin-top: 10px;
+
+}
+
+div{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+button{
+  border-radius: 4px;
+  background-color: lightskyblue;
+  color: black;
+  padding: 5px;
+  width: 70%;
+  height: 50px;
+}
+
+button:hover{
+  background-color: cyan;
+  color: black;
+}
+.inicio-sesion-p{
+  color: aliceblue;
+a{
+  color:mediumaquamarine;
+  text-decoration: none;
+}
+}
+header{
+  width: 100%;
+  background-color: rgb(11, 10, 10);
+  align-content: center;
+}
+.menu{
+  float: right;
+}
+.menu .link{
+  text-decoration: none;
+  color: rgb(10, 155, 227);
+  font-size: 30px;
+  display: inline-block;
+  padding: 20px;
+}
+footer{
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+.cuerpo-credenciales{
+  background-color: rgb(15, 13, 13);
+}
+
