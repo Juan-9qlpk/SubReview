@@ -9,19 +9,20 @@ body{
   margin: 0;
   height: 100vh;
 }
-
-h1{
-  text-align: center;
-  color: white;
-}
-
 label{
   text-align: center;
   justify-content: center;
   display: flex;
   color: white;
 }
-
+p{
+  text-align: center;
+  color: aliceblue;
+}
+h1, h2, h3, h4{
+  text-align: center;
+  color: white;
+}
 input{
   border-radius: 5px;
   border-color: blue;
@@ -47,6 +48,16 @@ form{
   margin-top: 10px;
 
 }
+.div-formulario-registro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+  margin-top: 10px;
+  padding: 200px 0px 100px 0px;
+
+}
+
 
 div{
   text-align: center;
@@ -67,6 +78,7 @@ button{
 button:hover{
   background-color: cyan;
   color: black;
+  transition: 0,3s;
 }
 .inicio-sesion-p{
   color: aliceblue;
@@ -74,11 +86,21 @@ a{
   color:mediumaquamarine;
   text-decoration: none;
 }
+.cuerpo-credenciales{
+  background-color: rgb(15, 13, 13);
+}
+
+/* Menu dentro del header */
+
 }
 header{
   width: 100%;
   background-color: rgb(11, 10, 10);
   align-content: center;
+}
+header .logo{
+  width: 350px;
+  height: 92px;
 }
 .menu{
   float: right;
@@ -89,17 +111,321 @@ header{
   font-size: 30px;
   display: inline-block;
   padding: 20px;
+  transition: 0.5s;
 }
+.menu .link:hover{
+  color: white;
+  background-color: gray;
+  transition: 0.5s;
+
+}
+.menu .imguser{
+  width: 35px;
+  height: 35px;
+}
+
+
+/* footer */
+
 footer{
   background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
-  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0; 
   color: white;
 }
-.cuerpo-credenciales{
-  background-color: rgb(15, 13, 13);
+
+
+
+/* index.html*/
+
+
+.inicio-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    gap: 40px; 
+    padding-bottom: 100px;
 }
 
+.inicio-izquierda {
+    left: 0;
+    right: 50;
+    text-align: left;
+    display: block;
+}
+.inicio-derecha {
+    left: 51;
+    right: 100;
+    display: block;
+    padding: auto;
+}
+.inicio-derecha p, .inicio-izquierda p{
+  text-align: justify;
+}
+
+.lista-inicio{
+  color: white;
+  text-align: left;
+}
+.comparaciones{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Servicios movido a index */
+netflix{
+  color: red;
+}
+spotify{
+  color: greenyellow;
+}
+hbo{
+  color: blue;
+}
+disney{
+  color: orange;
+}
+film{
+  color: green;
+}
+amazon{
+  color: lightskyblue
+}
+apple{
+  color: lightgrey;
+}
+.listaservicios{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  color: white;
+  left: 0;
+  right: 0;
+}
+.ordenada{
+  text-align: left;
+}
+izquierda{
+  text-align: left;
+}
+.sumservicio{
+  color:cornflowerblue;
+  font-size: 150%;
+  display: inline-block;
+}
+.sumservicio:hover{
+  color: white;
+  background-color: gray;
+  transition: 0,3s;
+}
+.inicio-contacto{
+  color:cornflowerblue;
+}
+.inicio-contacto:hover{
+  color: white;
+  background-color: gray;
+  transition: 0,3s;
+}
+
+
+
+
+
+/*PARTE MIGUEL*/
+.categorias {
+    padding: 40px 30px;
+    background-color: #f4f4f4;
+}
+
+.intro{
+    text-align: center;
+    margin-bottom: 40px;
+  
+}
+
+.intro-titulo{
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.intro-texto{
+    font-size: 18px;
+    color: #555;
+}
+
+.grid-categorias {
+    display: grid;
+    margin: 90px;
+}
+
+.categoria-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+.categoria-card-catalogo {
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+.categoria-card-catalogo:hover {
+    background-color: #e6f7ff;
+    border-color: #00aaff;
+}
+
+.categoria-card:hover {
+    background-color: #e6f7ff;
+    border-color: #00aaff;
+}
+
+
+.categoria-card{
+    color: black;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* FIX comparaciones Juanma*/
+
+.comparaciones-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    gap: 40px; 
+    padding-bottom: 100px;
+}
+
+.comparaciones-izquierda {
+    left: 0;
+    right: 50;
+    text-align: center;
+    display: inline-block;
+
+}
+.comparaciones-derecha {
+    left: 51;
+    right: 100;
+    text-align: center;
+    padding: auto;
+    display: inline-block;
+}
+.fix{
+  margin-top: 70px
+}
+.comparaciones-derecha p, .comparaciones-izquierda p{
+  text-align: justify;
+}
+
+.lista-comparaciones{
+  color: white;
+  text-align: left;
+}
+.comparaciones{
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+}
+.sumserviciocomparar{
+  color:cornflowerblue;
+  font-size: 150%;
+  display: inline-block;
+}
+.sumserviciocomparar:hover{
+  color: white;
+  background-color: gray;
+  transition: 0,3s;
+}
+p.textocomparaciones{
+  text-align: justify;
+  text-align: center;
+}
+
+
+
+/* Dani */
+.div-formulario-contacto{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-49%, -49%);
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.div-formulario-contacto input{
+  width: 275px;
+  margin-left: 15px;
+}
+
+.div-contacto-1{
+  color:white;
+  position: absolute;
+  top:36%;
+  left: 75%;
+  transform: translate(-49%, -49%);
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 350px;
+}
+
+.div-contacto-2{
+  color:white;
+  margin-top:px;
+  position: absolute;
+  top: 68%;
+  left: 75%;
+  transform: translate(-49%, -49%);
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: white;
+  border-radius: 15px;
+  padding-right:25px;
+  padding-left: 25px;
+  width: 350px;
+}
+
+.imagen-contacto{
+  margin-right: 5px;
+}
+
+.imagen-contacto img{
+  height:50px;
+  width: 50px;
+}
+#nombrecontact{
+  width:1000px;
+}
+
+#email{
+  width:1000px; 
+}
+/* He añadido div-formulario-contacto y 
+div-contacto-1 y div-contacto-2
+y imagen-contacto */

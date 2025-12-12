@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SubReview - Inicio de Sesión</title>
             <link rel="stylesheet" href="../css/main.css">
+            <link rel="stylesheet" href="../css/textoTitulos.css">
             <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecera">
-        <a href="/index.html"><img src="../img/Logo.png" height="100px" width="250px"></a>
+        <a href="/index.html"><img src="../img/Logo.png" class="logo"></a>
     </header>
 
     <main class="cuerpo-credenciales">
     <div class="div-formulario">
     <form onsubmit="alert('Se ha iniciado sesión correctamente'); return false" method="post">
         <h1>Inicio de Sesión</h1>
-        <label for="usuario">Introduce tu usuario: </label>
+        <label for="usuario">Usuario: </label>
             <input id="usuario" name="usuario" value=""  minlength="4" maxlength="20" required class="input-credenciales">
         <br>
         <br>
-        <label for="contraseña">Introduce tu contraseña: </label>
+        <label for="contraseña">Contraseña: </label>
             <input id="contraseña" name="contraseña" type="password" minlength="6" maxlength="30" class="input-credenciales" required>
         <br>
         <br>
         <div class="inicio-sesion-p">
-            <p>¿No tienes usuario? <a href="registro.html"> Registrese</a></p>
+            <p>¿No tienes usuario? <a href="registro.html"> Regístrese</a></p>
         </div>
             <button type="submit">Iniciar Sesión</button>
     </form>

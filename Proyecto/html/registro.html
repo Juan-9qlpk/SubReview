@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubReview</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/textoTitulos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
         <header class="cabecera">
-        <a href="/index.html"><img src="../img/Logo.png" height="100px" width="250px"></a>
+        <a href="/index.html"><img src="../img/Logo.png" class="logo"></a>
         </header>
 
     <main>
-    <div class="div-formulario">
+    <div class="div-formulario-registro">
         <form onsubmit="alert('Se ha registrado su usuario correctamente'); return false" method="post">
             <h1>Registro</h1>
-            <label for="usuario">Introduce tu usuario: </label>
+            <label for="usuario">Usuario: </label>
                 <input id="usuario" value="" minlength="4" maxlength="20" name="usuario" required>
             <br>
             <br>
-            <label for="correoelectronico">Introduce tu correo electrónico:</label>
+            <label for="correoelectronico">Correo Electrónico:</label>
                 <input type="text" id="correoelectronico" value="" maxlength="35" min="8" width="30px" pattern="^([a-zA-Z0-9-.]+)@([a-zA-Z0-9-.]+).([a-zA-Z]{2,3})$" placeholder="ejemplo@ejemplo.com" required>
             <br>
             <br>
-            <label for="contra">Introduce tu contraseña:</label>
+            <label for="contra">Contraseña:</label>
                 <input type="password" id="contra" name="contraseña" value="" maxlength="30" minlength="6" required>
             <br>
             <br>
@@ -32,7 +33,7 @@
                 <input type="password" id="contra" name="contraseña" value="" maxlength="30" minlength="6" required>
             <br>
             <br>
-            <label for="fechanacimiento">Introduce tu fecha de nacimiento:</label>
+            <label for="fechanacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="fechanacimiento">
             <br>
             <br>

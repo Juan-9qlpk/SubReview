@@ -3,31 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto SubReview</title>
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
         <header class="cabecera">
-        <a href="/index.html"><img src="/img/Logo.png" height="100px" width="250px"></a>
+        <a href="../index.html"><img src="/img/Logo.png" class="logo"></a>
 
         <nav class="menu">
             <a href="../index.html" class="link">Inicio</a>
             <a href="../html/catalogo.html" class="link">Catálogo</a>
-            <a href="../html/servicios.html" class="link">Servicios</a>
             <a href="../html/contacto.html" class="link">Contactos</a>
-            <a href="../html/inicioSesion.html" class="link"><img src="/img/InicioSesion.png" height="35px" width="35px"></a>
+            <a href="../html/inicioSesion.html" class="link"><img src="/img/InicioSesion.png" class="imguser"></a>
         </nav>
 
         </header>
 
         <main>
-            
+            <h1>¿Necesitas ayuda?</h1>
+            <form class="div-formulario-contacto" onsubmit="alert('Se te enviará un correo en breve')">
+            <div>
+                <label for="nombrecontact">Nombre:* </label>
+                <input name="nombrecontact" id="nombrecontact" required>
+            </div>
+            <hr>
+            <div>
+                <label for="codpost">Usuario:* </label>
+                <input type="text" name="usuario" id="usuario" minlength="4" maxlength="20" required>
+            </div>
+            <hr>
+            <div>
+                <label for="email">Correo Electrónico:* </label>
+                <input type="email" name="email" id="email" required >
+            </div>
+            <hr>
+            <div>
+                <label for="telef">Teléfono: </label>
+                <input type="tel" name="telef" id="telef">
+            </div><br>
+            <div>
+                <button type="submit">Subir</button>
+            </div>
+            </form>
+
+            <div class="div-contacto-1">
+                <table>
+                    <tr><td>
+                        <h2>Nuestro correo electrónico:</h2>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>subreviewcontacto@gmail.com</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="div-contacto-2">
+                
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <h2>Nos puedes encontrar en:</h2>
+                        </td>
+                    </tr>
+                    <!--Tenemos pendiente crear las cuentas de redes sociales-->
+                    <tr>
+                        <td>
+                            <div class="imagen-contacto">
+                            <p><a href="https://instagram.com"><img src="../img/ig.png"></a></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagen-contacto">
+                                <p> <a href="https://x.com"><img src="../img/twitter.png"></a></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagen-contacto">
+                                <p> <a href="https://facebook.com"><img src="../img/facebook.png"></a></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagen-contacto">
+                                <p> <a href="https://threads.com"><img src="../img/threads.png"></a></p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </main>
 
         <footer id="pie">
         <p>&copy; 2025 SubReview</p>
         </footer>
-
 </body>
 </html>
